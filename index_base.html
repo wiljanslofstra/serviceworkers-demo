@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Service Worker demo</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+</head>
+<body>
+  <script type="text/javascript">
+    (function() {
+      // Check service worker support
+      if ('serviceWorker' in navigator) {
+        // Register service worker
+        navigator.serviceWorker.register('sw_base.js');
+      }
+    })();
+  </script>
+</body>
+</html>
